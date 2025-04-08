@@ -46,8 +46,8 @@ void Deletarcontato(struct Contato agenda[], int *numContatos, int *alteracoesNa
     char desejo;
     
     if(*numContatos == 0){
-        printf("Não existe nenhum contato, favor criar contatos!!!");
-        printf("Deseja criar um contato novo: S/N.");
+        printf("Não existe nenhum contato, favor criar contatos!!!\n");
+        printf("Deseja criar um contato novo, S/N:");
         scanf(" %c", &desejo);
         if(desejo == 'S' || desejo == 's'){
             Adicionarcontato(agenda, numContatos, alteracoesNaoSalvas);
